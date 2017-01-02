@@ -21,9 +21,23 @@ public class TriangleController {
 	}
 
 	@RequestMapping(value="/triangle/sides", method = RequestMethod.GET)
-	public Triangle triangle(@RequestParam("sides") String[] sides) {
-		return null;
+	public Triangle triangleSides(@RequestParam("values") String[] sides) {
+		double[] doubleSides = new double[3];
+		for(int i=0;i<3;i++) { // Only take the first three values
+			doubleSides[i] = Double.parseDouble(sides[i]);
+		}
+		Triangle triangle = new Triangle(doubleSides);
+		return triangle;
 	}
-
-
+	
+	@RequestMapping(value="/triangle/angles", method = RequestMethod.GET)
+	public Triangle triangleAngles(@RequestParam("values") String[] angles) {
+		double[] doubleAngles = new double[3];
+		for(int i=0;i<3;i++) { // Only take the first three values
+			doubleAngles[i] = Double.parseDouble(angles[i]);
+		}
+		double[] sides = MathHelper.GetSidesFromAngles(doubleAngles);
+		Triangle triangle = new Triangle(sides);
+		return triangle;
+	}
 }

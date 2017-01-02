@@ -6,20 +6,26 @@ package shapes;
  */
 public class Triangle {
 	private final String type;
-	private final long[] angles;
-	private final long[] sides;
+	private final double[] angles;
+	private final double[] sides;
 
-	public Triangle(long[] angles, long[] sides, String type) {
+	public Triangle(double[] sides) {
+		this.sides = sides;
+		this.angles = MathHelper.GetAnglesFromSides(sides);
+		this.type = MathHelper.GetTriangleTypeFromSides(sides).toString();
+	}
+	
+	public Triangle(double[] angles, double[] sides, String type) {
 		this.type = type;
 		this.angles = angles;
 		this.sides = sides;
 	}
 
-	public long[] getAngles() {
+	public double[] getAngles() {
 		return angles;
 	}
 
-	public long[] getSides() {
+	public double[] getSides() {
 		return sides;
 	}
 
