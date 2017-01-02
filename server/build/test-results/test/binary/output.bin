@@ -1,14 +1,0 @@
-$GetAnglesFromSides for equilateral
- GetAnglesFromSides for scalene
-$GetTriangleTypeFromSides Isosceles
-!GetSidesFromAngles for 4 angles
-'GetTriangleTypeFromAngels Equilateral
-)GetSidesFromAngles for angleswithsum 90
-(GetSidesFromAngles for ScaleneTriangle
-	GetAnglesFromSides for square
-
-&GetTriangleTypeFromSides equilateral
-,GetSidesFromAngles for EquilateralTriangle
-"GetTriangleTypeFromSides Scalene
-%GetTriangleTypeFromAngels Isosceles
-#GetTriangleTypeFromAngels Scalene
