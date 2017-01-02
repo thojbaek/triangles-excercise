@@ -1,18 +1,18 @@
 buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
-    }
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
+	}
 }
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'tth-triangles-rest-service'
-    version =  '0.1.0'
+	baseName = 'tth-triangles-rest-service'
+	version =  '0.1.0'
 }
 
 sourceCompatibility = '1.8'
@@ -26,21 +26,21 @@ targetCompatibility = '1.8'
 // Note however, that you may define your own "run" and "debug" task if you
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
-//if (!hasProperty('mainClass')) {
-//    ext.mainClass = ''
-//}
+if (!hasProperty('mainClass')) {
+	ext.mainClass = 'shapes.Application'
+}
 
 repositories {
-    mavenCentral()
-    // You may define additional repositories, or even remove "mavenCentral()".
-    // Read more about repositories here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+	mavenCentral()
+	// You may define additional repositories, or even remove "mavenCentral()".
+	// Read more about repositories here:
+	//   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
 }
 
 dependencies {
-    // TODO: Add dependencies here ...
-    // You can read more about how to add dependency here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+	// TODO: Add dependencies here ...
+	// You can read more about how to add dependency here:
+	//   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+	compile("org.springframework.boot:spring-boot-starter-web")
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
