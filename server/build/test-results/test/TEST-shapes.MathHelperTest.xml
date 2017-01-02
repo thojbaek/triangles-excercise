@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shapes.MathHelperTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-01-02T21:54:05" hostname="tth" time="0.062">
+  <properties/>
+  <testcase name="testGetAnglesFromSides_EquilateralTriangle" classname="shapes.MathHelperTest" time="0.031"/>
+  <testcase name="testGetAnglesFromSides_ScaleneTriangle" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromSides_Isosceles" classname="shapes.MathHelperTest" time="0.016"/>
+  <testcase name="testGetSidesFromAngles_TooManyAngles" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromAngels_Equilateral" classname="shapes.MathHelperTest" time="0.015"/>
+  <testcase name="testGetSidesFromAngles_SumWrongWithAngles" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetSidesFromAngles_ScaleneTriangle" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetAnglesFromSides_Square" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromSides_Equilateral" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetSidesFromAngles_EquilateralTriangle" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromSides_Scalene" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromAngels_Isosceles" classname="shapes.MathHelperTest" time="0.0"/>
+  <testcase name="testGetTriangleTypeFromAngels_Scalene" classname="shapes.MathHelperTest" time="0.0"/>
+  <system-out><![CDATA[GetAnglesFromSides for equilateral
+GetAnglesFromSides for scalene
+GetTriangleTypeFromSides Isosceles
+GetSidesFromAngles for 4 angles
+GetTriangleTypeFromAngels Equilateral
+GetSidesFromAngles for angleswithsum 90
+GetSidesFromAngles for ScaleneTriangle
+GetAnglesFromSides for square
+GetTriangleTypeFromSides equilateral
+GetSidesFromAngles for EquilateralTriangle
+GetTriangleTypeFromSides Scalene
+GetTriangleTypeFromAngels Isosceles
+GetTriangleTypeFromAngels Scalene
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
