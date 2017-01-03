@@ -1,0 +1,24 @@
+{
+  "name": "tth-triangles-excersise-client",
+  "version": "0.1.0",
+  "description": "A simple page where you can find the type of a triangle by putting in the lengths of the sides",
+  "author": "Thomas Thsited Hoejbaek <thojbaek@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "connect-flash": "^0.1.1",
+    "pug": "^2.0.0-beta6",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thojbaek/triangles-excercise"
+  },
+  "license": "MIT"
+}

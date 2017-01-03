@@ -1,0 +1,32 @@
+extends _layout
+
+block body
+    .container
+        h1= "Triangles"
+        row.col-md-12
+            p.lead
+                | Please enter the length of the three sides to determine the type of triangle
+
+        row.col-md-12
+            form(role='form', action="gettypesides", method="post").form-horizontal
+                .form-group
+                    label(for="side1").col-md-1.control-label Side 1
+                    .col-md-4
+                        input(type="text", id="side1", name="side1").form-control
+                .form-group
+                    label(for="side2").col-md-1.control-label Side 2
+                    .col-md-4
+                        input(type="text", id="side2", name="side2").form-control
+                .form-group
+                    label(for="side3").col-md-1.control-label Side 3
+                    .col-md-4
+                        input(type="text", id="side3", name="side3").form-control
+                .form-group
+                    .col-md-offset-1.col-md-4
+                        button(type="submit").btn.btn-default Get triangle-type
+        if result.length > 0
+            row.col-md-offset-4.col-md-4
+                div(role="alert").alert.alert-success
+                    strong
+                        | Success
+                    span= result
